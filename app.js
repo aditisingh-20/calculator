@@ -1,10 +1,11 @@
 const input=document.querySelector('#screen');
-var str="";
+var str=" ";
 
 function button(id){
     const btn=document.querySelector(`#${id}`);
     input.placeholder+=btn.value;
     str+=btn.value;
+    console.log(str);
 }
 function clearpl(){
     if(input.placeholder!==""){
@@ -40,6 +41,7 @@ function calculate(){
     {
         invalid();
     }
+    console.log(str);
     const res=eval(str);
     input.placeholder=res;
 }
