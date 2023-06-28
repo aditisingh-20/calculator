@@ -16,17 +16,17 @@ function clearpl(){
         }
         else{
             input.placeholder="";
-            str="";
+            str=" ";
         }
     }
 }
 function clearall(){
     input.placeholder="";
-    str="";
+    str=" ";
 }
 function invalid(){
     input.placeholder="INVALID";
-    str="";
+    str=" ";
 }
 function calculate(){
     if(str.length<3)
